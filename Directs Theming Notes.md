@@ -1,4 +1,8 @@
-Directs Theming Notes:
+#### Directs Theming Notes:
+---
+
+
+### Variable Structure
 
 - CSS variables should be generated in the form `--{level}-{grouping}-{state}-{property}-{variant}`
 - Only the `level` and `property` properties are required
@@ -15,3 +19,21 @@ Directs Theming Notes:
 	- In some cases, the property may be vague on its own, but have significance in the context of its `grouping`. For instance, in our example theme we have properties `primary` and `secondary`. These property names don't mean much on their own, however, when coupled with their `color` grouping it is obvious what we are defining. This is one reason why the grouping must always come before properties.
 
 - `{variant}` - Optional: Used when a single property can be broken into multiple variants. This should always be last, if it is used. For example, in our example theme, our colors are commonly broken into `normal`, `accent`, and `muted` variants (amongst others). Variants are most appropriate when multiple values can have the same application (context dependant), and only vary slightly.
+
+---
+
+### Variable Linking
+
+- When linking values in the theme JSON, the value will be a 1-to-1 match to the variable reference which will be used in the generated CSS.
+- For instance, if we want to link colors from the module category to the global variables, it would look like the following:
+```js
+	module: {
+		background: '#18222F',
+		foreground: 'var( --g-color-foreground-muted )'
+		//...
+	}
+```
+- With this structure, the module `foreground` value can be directly added to the page css without needing any extra data manipulation.
+- Since theme values should always correspond to a valid CSS value, the theming UI can always check if a value matches the pattern `var( * )` and know for certain that it is a linked value.
+- Due to the standardized nature of the variable naming, if the theming UI ever requires a reference to the original value in the theme JSON, it can always remove the leading `var( --`, trailing `)`, replace the initial `g-` with `global-`, and then splice the resulting string by hyphens. That will give an array corresponding the exact path to the variable in the theme JSON.
+
