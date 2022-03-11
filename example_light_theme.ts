@@ -20,42 +20,42 @@ export const exampleTheme: DirectusTheme = {
 			},
 			color: {
 				primary: {
-					normal: 'rgb( 102, 68, 255 )',
-					accent: 'rgb( 68, 34, 221 )',
-					muted: 'rgb( 221, 221, 255 )',
+					normal: '#6644FF',
+					accent: '#4422DD',
+					muted: '#DDDDFF',
 				},
 				secondary: {
-					normal: 'rgb( 255, 153, 221 )',
-					accent: 'rgb( 255, 119, 187 )',
-					muted: 'rgb( 255, 221, 238 )'
+					normal: '#FF99DD',
+					accent: '#FF77BB',
+					muted: '#FFDDEE',
 				},
 				warning: {
-					normal: 'rgb( 251, 197, 79 )',
-					accent: 'rgb( 237, 186, 74 )',
-					muted: 'rgb( 254, 240, 211 )'
+					normal: '#FBC54F',
+					accent: '#EDBA4A',
+					muted: '#FEF0D3',
 				},
 				danger: {
-					normal: 'rgb( 227, 81, 105 )',
-					accent: 'rgb( 206, 61, 85 )',
-					muted: 'rgb( 248, 211, 217 )'
+					normal: '#E35169',
+					accent: '#CE3D55',
+					muted: '#F8D3D9',
 				},
 				border: {
-					normal: 'rgb( 211, 218, 228 )',
-					accent: 'rgb( 162, 181, 205 )',
-					muted: 'rgb( 240, 244, 249 )'
+					normal: '#D3DAE4',
+					accent: '#A2B5CD',
+					muted: '#F0F4F9',
 				},
 				background: {
-					normal: 'rgb( 240, 244, 249 )',
-					accent: 'rgb( 228, 234, 241 )',
-					muted: 'rgb( 247, 250, 252 )',
-					page: 'rgb( 255, 255, 255 )',
-					invert: 'rgb( 38, 50, 56 )'
+					normal: '#F0F4F9',
+					accent: '#E4EAF1',
+					muted: '#F7FAFC',
+					page: '#FFFFFF',
+					invert: '#263238',
 				},
 				foreground: {
-					normal: 'rgb( 79, 84, 100 )',
-					accent: 'rgb( 23, 41, 64 )',
-					muted: 'rgb( 162, 181, 205 )',
-					invert: 'rgb( 255, 255, 255 )'
+					normal: '#4F5464',
+					accent: '#172940',
+					muted: '#A2B5CD',
+					invert: '#FFFFFF',
 				}
 			}
 		},
@@ -65,15 +65,15 @@ export const exampleTheme: DirectusTheme = {
 		 */
 		category: {
 			module: {
-				background: 'rgb( 24, 34, 47 )',
-				foreground: 'rgb( 162, 181, 205 )',
+				background: '#18222F',
+				foreground: '#A2B5CD',
 				hover: {
-					background: 'rgb( 24, 34, 47 )',
-					foreground: 'rgb( 255, 255, 255 )'
+					background: '#18222F',
+					foreground: '#FFFFFF',
 				},
 				active: {
-					background: 'rgb( 240, 244, 249 )',
-					foreground: 'rgb( 23, 41, 64 )'
+					background: '#F0F4F9',
+					foreground: '#172940',
 				}
 			}
 		}
