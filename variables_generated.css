@@ -8,42 +8,42 @@
 	--g-border-width: 2px;
 	--g-border-radius: 6px;
 
-	--g-color-primary-normal: rgb( 102, 68, 255 );
-	--g-color-primary-accent: rgb( 68, 34, 221 );
-	--g-color-primary-muted: rgb( 221, 221, 255 );
+	--g-color-primary-normal: #6644FF;
+	--g-color-primary-accent: #4422DD;
+	--g-color-primary-muted: #DDDDFF;
 
-	--g-color-secondary-normal: rgb( 255, 153, 221 );
-	--g-color-secondary-accent: rgb( 255, 119, 187 );
-	--g-color-secondary-muted: rgb( 255, 221, 238 );
+	--g-color-secondary-normal: #FF99DD;
+	--g-color-secondary-accent: #FF77BB;
+	--g-color-secondary-muted: #FFDDEE;
 
-	--g-color-warning-normal: rgb( 251, 197, 79 );
-	--g-color-warning-accent: rgb( 237, 186, 74 );
-	--g-color-warning-muted: rgb( 254, 240, 211 );
+	--g-color-warning-normal: #FBC54F;
+	--g-color-warning-accent: #EDBA4A;
+	--g-color-warning-muted: #FEF0D3;
 
-	--g-color-danger-normal: rgb( 227, 81, 105 );
-	--g-color-danger-accent: rgb( 206, 61, 85 );
-	--g-color-danger-muted: rgb( 248, 211, 217 );
+	--g-color-danger-normal: #E35169;
+	--g-color-danger-accent: #CE3D55;
+	--g-color-danger-muted: #F8D3D9;
 
-	--g-color-border-normal: rgb( 211, 218, 228 );
-	--g-color-border-accent: rgb( 162, 181, 205 );
-	--g-color-border-muted: rgb( 240, 244, 249 );
+	--g-color-border-normal: #D3DAE4;
+	--g-color-border-accent: #A2B5CD;
+	--g-color-border-muted: #F0F4F9;
 
-	--g-color-background-normal: rgb( 240, 244, 249 );
-	--g-color-background-accent: rgb( 228, 234, 241 );
-	--g-color-background-muted: rgb( 247, 250, 252 );
-	--g-color-background-page: rgb( 255, 255, 255 );
-	--g-color-background-invert: rgb( 38, 50, 56 );
+	--g-color-background-normal: #F0F4F9;
+	--g-color-background-accent: #E4EAF1;
+	--g-color-background-muted: #F7FAFC;
+	--g-color-background-page: #FFFFFF;
+	--g-color-background-invert: #263238;
 
-	--g-color-foreground-normal: rgb( 79, 84, 100 );
-	--g-color-foreground-accent: rgb( 23, 41, 64 );
-	--g-color-foreground-muted: rgb( 162, 181, 205 );
-	--g-color-foreground-invert: rgb( 255, 255, 255 );
+	--g-color-foreground-normal: #4F5464;
+	--g-color-foreground-accent: #172940;
+	--g-color-foreground-muted: #A2B5CD;
+	--g-color-foreground-invert: #FFFFFF;
 
 	/* Categorical settings are simply prefixed with the category name */
-	--module-background: rgb( 24, 34, 47 );
-	--module-foreground: rgb( 162, 181, 205 );
-	--module-hover-background: rgb( 24, 34, 47 );
-	--module-hover-foreground: rgb( 255, 255, 255 );
-	--module-active-background: rgb( 240, 244, 249 );
-	--module-active-foreground: rgb( 23, 41, 64 );
+	--module-background: #18222F;
+	--module-foreground: #A2B5CD;
+	--module-hover-background: #18222F;
+	--module-hover-foreground: #FFFFFF;
+	--module-active-background: #F0F4F9;
+	--module-active-foreground: #172940;
 }
