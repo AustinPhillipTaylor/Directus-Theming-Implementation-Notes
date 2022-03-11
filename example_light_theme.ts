@@ -7,7 +7,7 @@ export const exampleTheme: DirectusTheme = {
 	theme: {
 		global: {
 			font: {
-				size: `16px`,
+				size: '16px',
 				family: {
 					sans: 'Open Sans',
 					serif: 'Meriweather',
@@ -19,27 +19,25 @@ export const exampleTheme: DirectusTheme = {
 				radius: '6px'
 			},
 			color: {
-				focal: {
-					primary: {
-						normal: 'rgb( 102, 68, 255 )',
-						accent: 'rgb( 68, 34, 221 )',
-						muted: 'rgb( 221, 221, 255 )',
-					},
-					secondary: {
-						normal: 'rgb( 255, 153, 221 )',
-						accent: 'rgb( 255, 119, 187 )',
-						muted: 'rgb( 255, 221, 238 )'
-					},
-					warning: {
-						normal: 'rgb( 251, 197, 79 )',
-						accent: 'rgb( 237, 186, 74 )',
-						muted: 'rgb( 254, 240, 211 )'
-					},
-					danger: {
-						normal: 'rgb( 227, 81, 105 )',
-						accent: 'rgb( 206, 61, 85 )',
-						muted: 'rgb( 248, 211, 217 )'
-					}
+				primary: {
+					normal: 'rgb( 102, 68, 255 )',
+					accent: 'rgb( 68, 34, 221 )',
+					muted: 'rgb( 221, 221, 255 )',
+				},
+				secondary: {
+					normal: 'rgb( 255, 153, 221 )',
+					accent: 'rgb( 255, 119, 187 )',
+					muted: 'rgb( 255, 221, 238 )'
+				},
+				warning: {
+					normal: 'rgb( 251, 197, 79 )',
+					accent: 'rgb( 237, 186, 74 )',
+					muted: 'rgb( 254, 240, 211 )'
+				},
+				danger: {
+					normal: 'rgb( 227, 81, 105 )',
+					accent: 'rgb( 206, 61, 85 )',
+					muted: 'rgb( 248, 211, 217 )'
 				},
 				border: {
 					normal: 'rgb( 211, 218, 228 )',

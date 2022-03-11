@@ -17,12 +17,10 @@ interface GlobalSettings {
 		}
 	}
 	color?: {
-		focal?: {
-			primary?: BaseColorVariants
-			secondary?: BaseColorVariants
-			warning?: BaseColorVariants
-			danger?: BaseColorVariants
-		}
+		primary?: BaseColorVariants
+		secondary?: BaseColorVariants
+		warning?: BaseColorVariants
+		danger?: BaseColorVariants
 		foreground?: BaseColorVariants & {
 			invert?: RGB
 		}
