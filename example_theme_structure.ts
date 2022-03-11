@@ -62,10 +62,10 @@ interface ThemeSettings {
 
 interface Configuration {
 	auto_generate?: {
-		primary: boolean
-		secondary: boolean
-		warning: boolean
-		danger: boolean
+		primary?: boolean
+		secondary?: boolean
+		warning?: boolean
+		danger?: boolean
 	}
 	/** For future implementation of linked colors */
 	links?: {}
