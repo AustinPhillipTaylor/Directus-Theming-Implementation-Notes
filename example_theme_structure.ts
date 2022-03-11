@@ -1,10 +1,12 @@
-type RGB = `rgb( ${number}, ${number}, ${number} )`
+// type RGB = `rgb( ${number}, ${number}, ${number} )`
+type Hex = `#${string}`
+type Link = `var( --${string} )`
 type Pixels = `${number}px`
 
 interface BaseColorVariants {
-	normal?: RGB
-	accent?: RGB
-	muted?: RGB
+	normal?: Hex | Link
+	accent?: Hex | Link
+	muted?: Hex | Link
 }
 
 interface GlobalSettings {
@@ -22,11 +24,11 @@ interface GlobalSettings {
 		warning?: BaseColorVariants
 		danger?: BaseColorVariants
 		foreground?: BaseColorVariants & {
-			invert?: RGB
+			invert?: Hex | Link
 		}
 		background?: BaseColorVariants & {
-			page?: RGB
-			invert?: RGB
+			page?: Hex | Link
+			invert?: Hex | Link
 		}
 		border?: BaseColorVariants
 	}
@@ -37,7 +39,7 @@ interface GlobalSettings {
 }
 
 interface SubProperty {
-	[key: string]: string | Pixels | RGB | SubProperty
+	[key: string]: string | Pixels | Hex | Link | SubProperty
 }
 
 interface CategoricalSettings {
@@ -65,8 +67,6 @@ interface Configuration {
 		warning?: boolean
 		danger?: boolean
 	}
-	/** For future implementation of linked colors */
-	links?: {}
 }
 
 export interface DirectusTheme {
