@@ -60,6 +60,17 @@ interface ThemeSettings {
 	localOverrides?: CSSOverrides
 }
 
+interface Configuration {
+	auto_generate?: {
+		primary: boolean
+		secondary: boolean
+		warning: boolean
+		danger: boolean
+	}
+	/** For future implementation of linked colors */
+	links?: {}
+}
+
 export interface DirectusTheme {
 	/** Display name for theme */
 	name: string
@@ -67,6 +78,8 @@ export interface DirectusTheme {
 	author?: string
 	/** Short description of theme */
 	description?: string
-	/** List of all settings to parse */
-	settings: ThemeSettings
+	/** List of theme settings to parse */
+	theme: ThemeSettings
+	/** Configuration settings for use in theming interface */
+	config?: Configuration
 }

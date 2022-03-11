@@ -4,7 +4,7 @@ export const exampleTheme: DirectusTheme = {
 	name: 'Directus Light 2022',
 	author: 'Directus',
 	description: 'Primary light Directus theme',
-	settings: {
+	theme: {
 		global: {
 			font: {
 				size: `16px`,
@@ -80,4 +80,12 @@ export const exampleTheme: DirectusTheme = {
 			}
 		}
 	},
+	config: {
+		auto_generate: {
+			primary: true,
+			secondary: true,
+			warning: true,
+			danger: true
+		}
+	}
 }
