@@ -1,4 +1,4 @@
-// Global variables prefixed with a `g-`
+/* Global variables prefixed with a `g-` */
 :root {
 	--g-font-size: 16px;
 	--g-font-family-sans: 'Open Sans';
@@ -39,7 +39,7 @@
 	--g-color-foreground-muted: rgb( 162, 181, 205 );
 	--g-color-foreground-invert: rgb( 255, 255, 255 );
 
-	// Categorical settings are simply prefixed with the category name
+	/* Categorical settings are simply prefixed with the category name */
 	--module-background: rgb( 24, 34, 47 );
 	--module-foreground: rgb( 162, 181, 205 );
 	--module-hover-background: rgb( 24, 34, 47 );
