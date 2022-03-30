@@ -1,49 +1,54 @@
 /* Global variables prefixed with a `g-` */
-:root {
+body.light {
+
 	--g-font-size: 16px;
-	--g-font-family-sans: 'Open Sans';
-	--g-font-family-serif: 'Meriweather';
-	--g-font-family-mono: 'Fira Code';
+	--g-font-family-sans: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--g-font-family-serif: "Merriweather", serif;
+	--g-font-family-mono: "Fira Mono", monospace, sans-serif;
 
 	--g-border-width: 2px;
 	--g-border-radius: 6px;
 
 	--g-color-primary-normal: #6644FF;
 	--g-color-primary-accent: #4422DD;
-	--g-color-primary-muted: #DDDDFF;
+	--g-color-primary-subtle: #DDDDFF;
 
 	--g-color-secondary-normal: #FF99DD;
 	--g-color-secondary-accent: #FF77BB;
-	--g-color-secondary-muted: #FFDDEE;
+	--g-color-secondary-subtle: #FFDDEE;
+
+	--g-color-success-normal: #2ECDA7;
+	--g-color-success-accent: #2CBC9B;
+	--g-color-success-subtle: #EAFAF6;
 
 	--g-color-warning-normal: #FBC54F;
 	--g-color-warning-accent: #EDBA4A;
-	--g-color-warning-muted: #FEF0D3;
+	--g-color-warning-subtle: #FEF0D3;
 
 	--g-color-danger-normal: #E35169;
 	--g-color-danger-accent: #CE3D55;
-	--g-color-danger-muted: #F8D3D9;
+	--g-color-danger-subtle: #F8D3D9;
 
 	--g-color-border-normal: #D3DAE4;
 	--g-color-border-accent: #A2B5CD;
-	--g-color-border-muted: #F0F4F9;
+	--g-color-border-subtle: #F0F4F9;
 
 	--g-color-background-normal: #F0F4F9;
 	--g-color-background-accent: #E4EAF1;
-	--g-color-background-muted: #F7FAFC;
+	--g-color-background-subtle: #F7FAFC;
 	--g-color-background-page: #FFFFFF;
-	--g-color-background-invert: #263238;
+	--g-color-background-invert: #18222F;
 
 	--g-color-foreground-normal: #4F5464;
 	--g-color-foreground-accent: #172940;
-	--g-color-foreground-muted: #A2B5CD;
+	--g-color-foreground-subtle: #A2B5CD;
 	--g-color-foreground-invert: #FFFFFF;
 
 	/* Categorical settings are simply prefixed with the category name */
-	--module-background: #18222F;
-	--module-foreground: #A2B5CD;
-	--module-hover-background: #18222F;
-	--module-hover-foreground: #FFFFFF;
-	--module-active-background: #F0F4F9;
-	--module-active-foreground: #172940;
+	--module-background-normal: #18222F;
+	--module-background-hover: #18222F;
+	--module-background-active: #F0F4F9;
+	--module-foreground-normal: #8196B1;
+	--module-foreground-hover: #FFFFFF;
+	--module-foreground-active: #172940;
 }

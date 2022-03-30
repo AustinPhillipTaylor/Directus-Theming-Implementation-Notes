@@ -1,83 +1,71 @@
-// type RGB = `rgb( ${number}, ${number}, ${number} )`
-type Hex = `#${string}`
-type Link = `var( --${string} )`
-type Pixels = `${number}px`
+type Hex = `#${string}`;
+type Link = `var(--${string})`;
+type Pixels = `${number}px`;
 
 interface BaseColorVariants {
-	normal?: Hex | Link
-	accent?: Hex | Link
-	muted?: Hex | Link
+	normal?: Hex | Link;
+	accent?: Hex | Link;
+	subtle?: Hex | Link;
 }
 
 interface GlobalSettings {
 	font?: {
-		size?: Pixels
+		size?: Pixels;
 		family?: {
-			sans?: string
-			serif?: string
-			mono?: string
-		}
-	}
+			sans?: string;
+			serif?: string;
+			mono?: string;
+		};
+	};
 	color?: {
-		primary?: BaseColorVariants
-		secondary?: BaseColorVariants
-		warning?: BaseColorVariants
-		danger?: BaseColorVariants
+		primary?: BaseColorVariants;
+		secondary?: BaseColorVariants;
+		success?: BaseColorVariants;
+		warning?: BaseColorVariants;
+		danger?: BaseColorVariants;
 		foreground?: BaseColorVariants & {
-			invert?: Hex | Link
-		}
+			invert?: Hex | Link;
+		};
 		background?: BaseColorVariants & {
-			page?: Hex | Link
-			invert?: Hex | Link
-		}
-		border?: BaseColorVariants
-	}
+			page?: Hex | Link;
+			invert?: Hex | Link;
+		};
+		border?: BaseColorVariants;
+	};
 	border?: {
-		width?: Pixels
-		radius?: Pixels
-	}
+		width?: Pixels;
+		radius?: Pixels;
+	};
 }
 
 interface SubProperty {
-	[key: string]: string | Pixels | Hex | Link | SubProperty
+	[key: string]: string | Pixels | Hex | Link | SubProperty;
 }
 
-interface CategoricalSettings {
+interface ComponentSettings {
 	/** Key corresponds to category identifier */
-	[key: string]: SubProperty
+	[key: string]: SubProperty;
 }
-
-/** Unused for now, for future implementation */
-interface CSSOverrides {}
-
 
 interface ThemeSettings {
 	/** General, global settings that will cascade down through the entire app */
-	global: GlobalSettings
+	global?: GlobalSettings;
 	/** Category-level settings */
-	category?: CategoricalSettings
-	/** Component-specific overrides (list of CSS variables) */
-	localOverrides?: CSSOverrides
+	components?: ComponentSettings;
 }
 
-interface Configuration {
-	auto_generate?: {
-		primary?: boolean
-		secondary?: boolean
-		warning?: boolean
-		danger?: boolean
-	}
-}
+/** For use with theming interface */
+// interface ThemingConfiguration {}
 
-export interface DirectusTheme {
+export interface Theme {
 	/** Display name for theme */
-	name: string
+	name: string;
 	/** Theme author */
-	author?: string
+	author?: string;
 	/** Short description of theme */
-	description?: string
+	description?: string;
 	/** List of theme settings to parse */
-	theme: ThemeSettings
+	theme: ThemeSettings;
 	/** Configuration settings for use in theming interface */
-	config?: Configuration
+	// config?: ThemingConfiguration;
 }
