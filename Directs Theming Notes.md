@@ -8,7 +8,7 @@
 - Only the `level` and `property` properties are required
 - These variables are generated in the order they are structured in the theme JSON, so they should be nested appropriately.
 
-- `{level}` - Required: Refers to the context of the variable. Global variables are prefixed with `g-`, referring to the global level. Variables listed in the category section will be prefixed with the key of the topmost parent. As such, the direct descendents of the category secton should all relate to the level, or context, of the properties listed therin.
+- `{level}` - Required: Refers to the context of the variable. `global` variables are prefixed with `g-`, referring to the global level. Variables listed in the `components` section will be prefixed with the key of the topmost parent. As such, the direct descendents of the `components` secton should all relate to the level, or context, of the properties listed therin.
 
 - `{grouping}` - Optional: Group identifiers that can be used to better organize variables when a level contains a large number of children. i.e. In the example theme, the `global` level contains groupings for `font`, `border`, `color`, etc. This helps give everything a logical separation. As well, in some instances the grouping helps to narrow the scope of the property, better defining the purpose of the property (See the second sub-point of the {property} section below for better explaination).
 
